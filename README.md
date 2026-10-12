@@ -1,32 +1,26 @@
-# React + TypeScript + Vite
+# Taxi Tracker Pro
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+![Taxi Tracker Pro — driver and earnings dashboard](screenshots/preview.png)
 
-Currently, two official plugins are available:
+A fleet-operations dashboard for minibus-taxi owners to track drivers, daily
+takings, running costs and maintenance in one place.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- **Dashboard** — active drivers, service-due alerts, total earnings, fuel and
+  maintenance costs, and net profit at a glance.
+- **Drivers** and **Daily Entries** — capture per-driver takings and shifts.
+- **Maintenance** — schedule and log vehicle servicing.
+- **Reports** — charts (Chart.js) and summary analytics.
+- **Cloud sync** with Firebase Firestore.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech
 
-## Expanding the Oxlint configuration
+`React 19` · `TypeScript` · `Vite` · `React Router` · `Chart.js` · `Firebase`
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Getting started
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev
 ```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
